@@ -1,0 +1,41 @@
+body {
+  overflow-y: hidden;
+}
+.rounded-t-90 {
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+}
+
+.h-33 {
+  height: 33vh;
+}
+
+.-translate-y-30 {
+  transform: translateY(-30%);
+}
+
+.-translate-y-60 {
+  transform: translateY(-60%);
+}
+
+.first-collection img {
+  object-position: center !important;
+}
+
+.image {
+  object-fit: cover;
+  object-position: top;
+}
+
+.top-50 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.font-70 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Montserrat;
+
+  color: #fff;
+}
