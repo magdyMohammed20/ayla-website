@@ -127,12 +127,16 @@
   }
   .gifts span:nth-child(1),
   .gifts span:nth-child(2) {
-    font-size: 30px;
+    font-size: 22px;
+  }
+
+  .gifts span {
+    line-height: 40px;
   }
 
   .gifts span:nth-child(3),
   .gifts span:nth-child(4) {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .rounded-t-90:not(.all-collections img, .first-collection) {
@@ -148,7 +152,7 @@
     font-size: 22px;
   }
 
-  .gifts {
+  .gifts:not(.gifts-in-home) {
     height: auto;
   }
 
@@ -272,6 +276,13 @@
   .cards-container {
     padding-top: 65px;
     margin-top: 5rem;
+  }
+
+  .vertical-stepper li:not(:nth-child(1)) {
+    margin-top: 6.5rem;
+  }
+  .vertical-stepper .block span {
+    font-size: 13px;
   }
 }
 
