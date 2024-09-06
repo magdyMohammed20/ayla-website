@@ -8,7 +8,6 @@
 
 .bg-black-linear {
   background: linear-gradient(291deg, #000 0%, #1d1d1d 100%);
-  height: 100%;
 }
 .max-w-12xl {
   max-width: 96rem;
@@ -31,7 +30,6 @@
 .paragraph {
   margin: 14px 0 30px;
   color: #fff;
-  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -39,7 +37,7 @@
 
 .form-container {
   width: 618px;
-  position: absolute;
+  /* position: absolute; */
   top: -50px;
   right: 10%;
   background-image: url(../images/contact/bg-color.png);

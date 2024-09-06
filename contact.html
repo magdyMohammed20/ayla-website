@@ -6,6 +6,8 @@
     <title>contact us</title>
     <link rel="stylesheet" href="./css/tailwind.min.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" href="./images/favicon/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -16,11 +18,12 @@
   </head>
   <body>
     <!-- Start Contact Container -->
-    <div class="bg-black-linear h-screen pb-24">
+    <div class="bg-black-linear h-full pb-12 lg:pb-24">
       <!-- Start Wrapper -->
       <div class="max-w-12xl mx-auto">
         <!-- Start Navbar -->
-        <nav class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4">
+        <nav
+          class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4 relative justify-between">
           <div class="relative flex items-center">
             <a href="/" class="flex items-center gap-6">
               <svg
@@ -132,10 +135,8 @@
               </svg>
             </a>
           </div>
-
-          <div class="flex-grow"></div>
-          <div class="hidden items-center justify-center gap-6 md:flex">
-            <ul class="hidden items-center justify-center gap-6 md:flex">
+          <div class="items-center justify-center gap-6 md:flex menu">
+            <ul class="items-center justify-center gap-6 md:flex">
               <li class="pt-1.5 font-medium">
                 <a href="index.html" class="text-white">HOME</a>
               </li>
@@ -151,8 +152,9 @@
             </ul>
           </div>
           <div class="relative flex items-center justify-center md:hidden">
-            <button type="button">
+            <button type="button" class="nav-btn">
               <svg
+                fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -161,6 +163,7 @@
                 aria-hidden="true"
                 class="h-6 w-auto text-slate-900">
                 <path
+                  stroke="#FFF"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -176,13 +179,17 @@
         <!-- Start Contact Section -->
 
         <div class="xl:mt-24 w-full relative">
-          <img src="./images/contact/location.png" class="absolute img-bg" />
-          <div class="background-section"></div>
+          <img
+            src="./images/contact/location.png"
+            class="absolute img-bg hidden lg:flex" />
+          <div class="background-section hidden lg:flex"></div>
 
-          <div class="form-container">
+          <div class="form-container relative">
             <div>
-              <h1 class="text-white text-5xl font-bold">Get In Touch</h1>
-              <p class="paragraph text-white">
+              <h1 class="text-white text-2xl lg:text-5xl font-bold">
+                Get In Touch
+              </h1>
+              <p class="paragraph text-white text-sm lg:text-xl">
                 Write to us and we will contact you as soon as we can
               </p>
             </div>
@@ -238,7 +245,8 @@
           +966 53 339 1576
         </p>
 
-        <ul class="items-center gap-4 flex">
+        <ul
+          class="items-center gap-4 flex justify-end px-8 lg:px-0 lg:justify-start">
           <li>
             <a href="#"> <i class="fa-solid fa-envelope fa-lg"></i> </a>
           </li>
@@ -254,5 +262,7 @@
       <!-- End Wrapper -->
     </div>
     <!-- End Contact Container -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

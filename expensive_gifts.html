@@ -6,6 +6,8 @@
     <title>expensive gifts</title>
     <link rel="stylesheet" href="./css/tailwind.min.css" />
     <link rel="stylesheet" href="./css/expensive_gifts.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" href="./images/favicon/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -16,11 +18,12 @@
   </head>
   <body>
     <!-- Start Home Container -->
-    <div class="bg-black pb-24">
+    <div class="bg-black md:pb-24">
       <!-- Start Wrapper -->
       <div class="max-w-6xl mx-auto">
         <!-- Start Navbar -->
-        <nav class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4">
+        <nav
+          class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4 relative justify-between">
           <div class="relative flex items-center">
             <a href="/" class="flex items-center gap-6">
               <svg
@@ -132,10 +135,8 @@
               </svg>
             </a>
           </div>
-
-          <div class="flex-grow"></div>
-          <div class="hidden items-center justify-center gap-6 md:flex">
-            <ul class="hidden items-center justify-center gap-6 md:flex">
+          <div class="items-center justify-center gap-6 md:flex menu">
+            <ul class="items-center justify-center gap-6 md:flex">
               <li class="pt-1.5 font-medium">
                 <a href="index.html" class="text-white">HOME</a>
               </li>
@@ -151,8 +152,9 @@
             </ul>
           </div>
           <div class="relative flex items-center justify-center md:hidden">
-            <button type="button">
+            <button type="button" class="nav-btn">
               <svg
+                fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -161,6 +163,7 @@
                 aria-hidden="true"
                 class="h-6 w-auto text-slate-900">
                 <path
+                  stroke="#FFF"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -172,7 +175,7 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-6xl mx-auto flex flex-col gap-0 mt-16 items-center about px-24 items-center">
+          class="max-w-6xl mx-auto flex flex-col gap-0 mt-8 lg:mt-16 items-center about px-8 lg:px-24 items-center">
           <div class="relative w-full first-collection rounded-t-90">
             <div class="flex flex-col absolute top-50 ml-16 font-33">
               <span>EXPRESSIVE</span>
@@ -191,7 +194,7 @@
             </p>
           </div>
 
-          <ul class="flex gap-16 links">
+          <ul class="flex gap-4 mt-8 lg:gap-16 links flex-wrap">
             <li>
               <a href="#" class="text-white">CORPORATE GIFTS</a>
             </li>
@@ -554,7 +557,7 @@
     <!-- End Home Container -->
 
     <!-- Start Footer -->
-    <div class="flex relative py-4 items-center footer bg-white">
+    <div class="flex relative py-4 items-center footer bg-white px-8 xl:px-0">
       <div class="max-w-6xl w-full mx-auto flex justify-between">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -589,7 +592,7 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 flex">
+        <ul class="items-center justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="about.html" class="">ABOUT US</a>
           </li>
@@ -601,7 +604,7 @@
           </li>
         </ul>
 
-        <ul class="items-center justify-center gap-4 flex">
+        <ul class="items-center justify-center gap-4 flex social-links">
           <li>
             <a href="#"> <i class="fa-solid fa-envelope fa-lg"></i> </a>
           </li>
@@ -615,5 +618,7 @@
       </div>
     </div>
     <!-- End Footer -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

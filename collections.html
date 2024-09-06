@@ -6,6 +6,8 @@
     <title>Collections</title>
     <link rel="stylesheet" href="./css/tailwind.min.css" />
     <link rel="stylesheet" href="./css/collections.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" href="./images/favicon/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -20,7 +22,8 @@
       <!-- Start Wrapper -->
       <div class="max-w-6xl mx-auto">
         <!-- Start Navbar -->
-        <nav class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4">
+        <nav
+          class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4 relative justify-between">
           <div class="relative flex items-center">
             <a href="/" class="flex items-center gap-6">
               <svg
@@ -132,10 +135,8 @@
               </svg>
             </a>
           </div>
-
-          <div class="flex-grow"></div>
-          <div class="hidden items-center justify-center gap-6 md:flex">
-            <ul class="hidden items-center justify-center gap-6 md:flex">
+          <div class="items-center justify-center gap-6 md:flex menu">
+            <ul class="items-center justify-center gap-6 md:flex">
               <li class="pt-1.5 font-medium">
                 <a href="index.html" class="text-white">HOME</a>
               </li>
@@ -151,8 +152,9 @@
             </ul>
           </div>
           <div class="relative flex items-center justify-center md:hidden">
-            <button type="button">
+            <button type="button" class="nav-btn">
               <svg
+                fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -161,6 +163,7 @@
                 aria-hidden="true"
                 class="h-6 w-auto text-slate-900">
                 <path
+                  stroke="#FFF"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -172,42 +175,50 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-6xl mx-auto flex flex-col gap-0 mt-16 items-center about px-24 items-center">
-          <div class="h-33 w-full relative first-collection rounded-t-90">
-            <div class="flex flex-col absolute top-50 ml-16 font-70">
-              <span>LUXURY</span>
-              <span>GIFTS</span>
+          class="max-w-6xl mx-auto flex flex-col gap-0 mt-16 items-center about px-12 md:px-24 items-center all-collections">
+          <a href="luxury_gifts.html" class="block w-full">
+            <div class="h-33 w-full relative first-collection rounded-t-90">
+              <div class="flex flex-col absolute top-50 ml-16 font-70">
+                <span>LUXURY</span>
+                <span>GIFTS</span>
+              </div>
+              <img
+                src="./images/collections/collection-1.jpeg"
+                class="w-full rounded-t-90 h-full image" />
             </div>
-            <img
-              src="./images/collections/collection-1.jpeg"
-              class="w-full rounded-t-90 h-full image" />
-          </div>
+          </a>
 
-          <div class="h-33 relative w-full -translate-y-30">
-            <div class="flex flex-col absolute top-50 ml-16 font-70">
-              <span>EXPRESSIVE</span>
-              <span>GIFTS</span>
+          <a href="expensive_gifts.html" class="block w-full">
+            <div class="h-33 relative w-full -translate-y-30">
+              <div class="flex flex-col absolute top-50 ml-16 font-70">
+                <span>EXPRESSIVE</span>
+                <span>GIFTS</span>
+              </div>
+              <img
+                src="./images/collections/collection-2.jpeg"
+                class="w-full rounded-t-90 h-full image" />
             </div>
-            <img
-              src="./images/collections/collection-2.jpeg"
-              class="w-full rounded-t-90 h-full image" />
-          </div>
+          </a>
 
-          <div class="h-33 relative w-full -translate-y-60">
-            <div class="flex flex-col absolute top-50 ml-16 font-70">
-              <span>PERSONALIZED</span>
-              <span>GIFTS</span>
+          <a href="personalized_gifts.html" class="block w-full">
+            <div class="h-33 relative w-full -translate-y-60">
+              <div class="flex flex-col absolute top-50 ml-16 font-70">
+                <span>PERSONALIZED</span>
+                <span>GIFTS</span>
+              </div>
+
+              <img
+                src="./images/collections/collection-3.jpeg"
+                class="w-full rounded-t-90 h-full image" />
             </div>
-
-            <img
-              src="./images/collections/collection-3.jpeg"
-              class="w-full rounded-t-90 h-full image" />
-          </div>
+          </a>
         </div>
         <!-- End Colections -->
       </div>
       <!-- End Wrapper -->
     </div>
     <!-- End Home Container -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

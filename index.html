@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/tailwind.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" href="./images/favicon/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,7 +21,8 @@
       <!-- Start Wrapper -->
       <div class="max-w-6xl mx-auto">
         <!-- Start Navbar -->
-        <nav class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4">
+        <nav
+          class="border-b-2 justify-between border-gray-900 flex gap-8 px-6 lg:px-12 py-4 relative">
           <div class="relative flex items-center">
             <a href="/" class="flex items-center gap-6">
               <svg
@@ -131,10 +134,8 @@
               </svg>
             </a>
           </div>
-
-          <div class="flex-grow"></div>
-          <div class="hidden items-center justify-center gap-6 md:flex">
-            <ul class="hidden items-center justify-center gap-6 md:flex">
+          <div class="items-center justify-center gap-6 md:flex menu">
+            <ul class="items-center justify-center gap-6 md:flex">
               <li class="pt-1.5 font-medium">
                 <a href="index.html" class="">HOME</a>
               </li>
@@ -150,8 +151,9 @@
             </ul>
           </div>
           <div class="relative flex items-center justify-center md:hidden">
-            <button type="button">
+            <button type="button" class="nav-btn">
               <svg
+                fill="#000"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -160,6 +162,7 @@
                 aria-hidden="true"
                 class="h-6 w-auto text-slate-900">
                 <path
+                  stroke="#000"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -170,8 +173,8 @@
         <!-- End Navbar -->
 
         <!-- Start Hero Content -->
-        <div class="flex flex-col px-6 lg:px-12 mt-48">
-          <h1 class="mt-32 text-white font-100 font-bold">A STORY</h1>
+        <div class="flex flex-col px-6 lg:px-12 mt-24 lg:mt-48">
+          <h1 class="lg:mt-32 text-white font-100 font-bold">A STORY</h1>
           <h2 class="text-white font-100 font-bold">TO BE TOLD.</h2>
 
           <div class="mt-12 hero-grid">
@@ -191,7 +194,7 @@
             </div>
           </div>
 
-          <div id="cssportal-grid2" class="mt-4">
+          <div id="cssportal-grid2" class="hero-fifth-grid mt-4">
             <div id="grid5" class="rounded-xl"></div>
             <div id="grid6" class="rounded-xl flex">
               <div class="flex-1 opacity-0">1</div>
@@ -209,14 +212,15 @@
     <!-- End Home Container -->
 
     <!-- Start About -->
-    <div class="max-w-6xl mx-auto flex pt-32 pb-48 items-center about">
+    <div
+      class="max-w-6xl mx-auto flex pt-32 pb-48 items-center about px-12 xl:px-0">
       <div class="flex-1 mt-24">
         <span class="about-span">WITH IYLA,</span>
         <p class="about-content mt-4">
           Celebrates the full spectrum of emotions tied to cherished memories
         </p>
       </div>
-      <div class="flex-1">
+      <div class="flex-1 hidden lg:flex">
         <img src="./images/about/about-img.png" class="about-img" />
       </div>
     </div>
@@ -228,9 +232,9 @@
     </div>
     <!-- End Infograph -->
     <!-- Start Gifts -->
-    <div class="flex relative py-24 items-center gifts">
+    <div class="flex relative lg:py-24 items-center gifts">
       <div
-        class="absolute p-24 bottom-0 right-0 text-white text-xl flex flex-col">
+        class="absolute p-12 lg:p-24 bottom-0 right-0 text-white text-xl flex flex-col">
         <span class="italic">Every gift</span>
         <span class="italic">tells a story -</span>
         <span class="italic">Let us </span>
@@ -240,7 +244,7 @@
     <!-- End Gifts -->
 
     <!-- Start Footer -->
-    <div class="flex relative py-4 items-center footer bg-white">
+    <div class="flex relative py-4 items-center footer bg-white px-8 xl:px-0">
       <div class="max-w-6xl w-full mx-auto flex justify-between">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +279,7 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 flex">
+        <ul class="items-center justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="about.html" class="">ABOUT US</a>
           </li>
@@ -287,7 +291,7 @@
           </li>
         </ul>
 
-        <ul class="items-center justify-center gap-4 flex">
+        <ul class="items-center justify-center gap-4 flex social-links">
           <li>
             <a href="#"> <i class="fa-solid fa-envelope fa-lg"></i> </a>
           </li>
@@ -301,5 +305,7 @@
       </div>
     </div>
     <!-- End Footer -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

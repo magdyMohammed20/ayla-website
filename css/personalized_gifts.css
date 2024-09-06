@@ -152,7 +152,7 @@ div.card .number::before {
 
 .second-circle {
   left: 24.5%;
-  bottom: 0%;
+  bottom: -15%;
   border: 2px dotted #ffffff;
   border-top: 0;
   border-top-left-radius: 0;
@@ -172,7 +172,7 @@ div.card .number::before {
 
 .fourth-circle {
   left: 58.5%;
-  bottom: 0%;
+  bottom: -15%;
   border: 2px dotted #ffffff;
   border-top: 0;
   border-top-left-radius: 0;

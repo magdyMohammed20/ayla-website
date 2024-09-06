@@ -91,7 +91,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1366px) {
   .ceo {
     transform: translateX(-30%) !important;
   }

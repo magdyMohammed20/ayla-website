@@ -6,6 +6,8 @@
     <title>luxury gifts</title>
     <link rel="stylesheet" href="./css/tailwind.min.css" />
     <link rel="stylesheet" href="./css/luxury_gifts.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" href="./images/favicon/favicon.png" />
 
     <link
       rel="stylesheet"
@@ -20,7 +22,8 @@
       <!-- Start Wrapper -->
       <div class="max-w-12xl mx-auto">
         <!-- Start Navbar -->
-        <nav class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4">
+        <nav
+          class="border-b-2 border-gray-900 flex gap-8 px-6 lg:px-12 py-4 relative justify-between">
           <div class="relative flex items-center">
             <a href="/" class="flex items-center gap-6">
               <svg
@@ -132,10 +135,8 @@
               </svg>
             </a>
           </div>
-
-          <div class="flex-grow"></div>
-          <div class="hidden items-center justify-center gap-6 md:flex">
-            <ul class="hidden items-center justify-center gap-6 md:flex">
+          <div class="items-center justify-center gap-6 md:flex menu">
+            <ul class="items-center justify-center gap-6 md:flex">
               <li class="pt-1.5 font-medium">
                 <a href="index.html" class="text-white">HOME</a>
               </li>
@@ -151,8 +152,9 @@
             </ul>
           </div>
           <div class="relative flex items-center justify-center md:hidden">
-            <button type="button">
+            <button type="button" class="nav-btn">
               <svg
+                fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -161,6 +163,7 @@
                 aria-hidden="true"
                 class="h-6 w-auto text-slate-900">
                 <path
+                  stroke="#FFF"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
@@ -172,7 +175,7 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-12xl mx-auto flex flex-col gap-0 mt-16 items-center about px-24 items-center">
+          class="max-w-12xl mx-auto flex flex-col gap-0 mt-16 items-center about luxury px-8 lg:px-24 items-center">
           <div class="relative w-full first-collection rounded-t-90">
             <div class="flex flex-col absolute top-50 ml-16 font-33">
               <span>PERSONALIZED</span>
@@ -200,7 +203,103 @@
       </div>
 
       <!-- Start infograph Section -->
-      <div class="flex mt-64 py-32 gap-8 relative w-full">
+      <div class="px-4 md:px-24 my-16 vertical-stepper">
+        <ol class="space-y-8 lg:hidden">
+          <li
+            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-indigo-600 after:inline-block after:absolute after:-bottom-11 after:left-4 lg:after:left-5">
+            <a class="flex items-center font-medium w-full">
+              <span
+                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
+                >1</span
+              >
+              <div class="block">
+                <h4 class="text-lg text-gray-700 font-bold">Design Ideas</h4>
+                <span class="text-sm text-white text-sm"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero eveniet impedit cum quos dolor esse, ullam harum?
+                  Suscipit, sequi error!</span
+                >
+              </div>
+            </a>
+          </li>
+          <li
+            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
+            <a class="flex items-center font-medium w-full">
+              <span
+                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
+                >2</span
+              >
+              <div class="block">
+                <h4 class="text-lg text-gray-700 font-bold">Design Ideas</h4>
+                <span class="text-sm text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero eveniet impedit cum quos dolor esse, ullam harum?
+                  Suscipit, sequi error!</span
+                >
+              </div>
+            </a>
+          </li>
+          <li
+            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
+            <a class="flex items-center font-medium w-full">
+              <span
+                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
+                >3</span
+              >
+              <div class="block">
+                <h4 class="text-lg text-gray-700 font-bold">
+                  Design Confirmation
+                </h4>
+                <span class="text-sm text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero eveniet impedit cum quos dolor esse, ullam harum?
+                  Suscipit, sequi error!</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li
+            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
+            <a class="flex items-center font-medium w-full">
+              <span
+                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
+                >4</span
+              >
+              <div class="block">
+                <h4 class="text-lg text-gray-700 font-bold">
+                  Manufacturing & Supply
+                </h4>
+                <span class="text-sm text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero eveniet impedit cum quos dolor esse, ullam harum?
+                  Suscipit, sequi error!</span
+                >
+              </div>
+            </a>
+          </li>
+
+          <li
+            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
+            <a class="flex items-center font-medium w-full">
+              <span
+                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
+                >5</span
+              >
+              <div class="block">
+                <h4 class="text-lg text-gray-700 font-bold">Encapsulation</h4>
+                <span class="text-sm text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero eveniet impedit cum quos dolor esse, ullam harum?
+                  Suscipit, sequi error!</span
+                >
+              </div>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="lg:flex mt-64 py-32 gap-8 relative w-full hidden">
         <div class="stepper-wrapper w-full">
           <div class="stepper-item completed">
             <div class="step-counter">
@@ -312,7 +411,7 @@
     <!-- End Home Container -->
 
     <!-- Start Footer -->
-    <div class="flex relative py-4 items-center footer bg-white">
+    <div class="flex relative py-4 items-center footer bg-white px-8 xl:px-0">
       <div class="max-w-6xl w-full mx-auto flex justify-between">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -347,7 +446,7 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 flex">
+        <ul class="items-center justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="about.html" class="">ABOUT US</a>
           </li>
@@ -359,7 +458,7 @@
           </li>
         </ul>
 
-        <ul class="items-center justify-center gap-4 flex">
+        <ul class="items-center justify-center gap-4 flex social-links">
           <li>
             <a href="#"> <i class="fa-solid fa-envelope fa-lg"></i> </a>
           </li>
@@ -373,5 +472,7 @@
       </div>
     </div>
     <!-- End Footer -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
