@@ -85,6 +85,9 @@ body {
   z-index: 12;
 }
 
+.ceo-msg {
+  padding-left: 5%;
+}
 @media screen and (max-width: 1336px) {
   .ceo {
     transform: translateX(20px) !important;

@@ -18,10 +18,10 @@
 }
 
 .first-collection {
-  background-image: url(../images/collections/collection-2.jpeg);
+  background-image: url(../images/collections/collection-3.jpeg);
   background-size: cover;
   height: 263px;
-  background-position: 0 -95px;
+  background-position: 0 35%;
   background-repeat: no-repeat;
 }
 

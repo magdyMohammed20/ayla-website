@@ -7,15 +7,18 @@ body {
 }
 
 .h-33 {
-  height: 33vh;
+  height: 40vh;
 }
 
+.-translate-y-10 {
+  transform: translateY(-10%);
+}
 .-translate-y-30 {
-  transform: translateY(-30%);
+  transform: translateY(-45%);
 }
 
 .-translate-y-60 {
-  transform: translateY(-60%);
+  transform: translateY(-80%);
 }
 
 .first-collection img {
@@ -24,11 +27,24 @@ body {
 
 .image {
   object-fit: cover;
-  object-position: top;
+  object-position: 0 24%;
+  height: 107%;
+  box-shadow: -4px -9px 17px 0px rgba(0, 0, 0, 0.29);
 }
 
-.top-50 {
-  top: 50%;
+.image.first-img {
+  object-position: 0 64% !important;
+}
+.image.second-img {
+  object-position: 0 25% !important;
+}
+
+.image:last-child {
+  object-position: 0 40%;
+}
+
+.top-40 {
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -38,4 +54,8 @@ body {
   font-family: Montserrat;
 
   color: #fff;
+}
+
+.pt-68px {
+  padding-top: 68px;
 }

@@ -1,3 +1,7 @@
+.max-w-79 {
+  max-width: 79%;
+}
+
 @media (max-width: 1366px) {
   .share-circle {
     display: none;
@@ -288,7 +292,7 @@
 
 @media (min-width: 1024px) {
   .ceo {
-    transform: translateX(-10%) !important;
+    transform: translateX(15%) translateY(12%) !important;
   }
 
   .form-container {
@@ -333,6 +337,12 @@
 }
 
 @media (max-width: 468px) {
+  nav {
+    padding: 0 22px;
+  }
+  .max-w-79 {
+    max-width: 100%;
+  }
   .hero-second-grid,
   .hero-third-grid {
     width: 46%;
@@ -342,4 +352,8 @@
   .images-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.px-202px {
+  padding: 0 202px;
 }
