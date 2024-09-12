@@ -300,7 +300,27 @@
   }
 }
 
+@media (min-width: 1919px) {
+  .ceo {
+    transform: translateX(2%) translateY(12%) !important;
+  }
+}
+
 @media (max-width: 576px) {
+  .cards-container {
+    gap: 11px;
+  }
+
+  .g-p {
+    padding: 0 22px;
+  }
+
+  .g-p50 {
+    padding: 0 50px;
+  }
+  .gifts {
+    background-position: center;
+  }
   .hero-second-grid,
   .hero-third-grid {
     width: 47.5%;
@@ -334,6 +354,11 @@
   .images-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .ceo-container {
+    padding: 0 !important;
+    padding-bottom: 2rem !important;
+  }
 }
 
 @media (max-width: 468px) {
@@ -351,6 +376,15 @@
 
   .images-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .max-w-79 {
+    max-width: 100% !important;
+  }
+
+  .address,
+  .luxury {
+    padding: 0 22px;
   }
 }
 

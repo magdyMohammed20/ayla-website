@@ -1,6 +1,11 @@
 * {
   font-family: Montserrat;
 }
+
+nav {
+  border-bottom-color: #fff !important;
+}
+
 .rounded-t-90 {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;

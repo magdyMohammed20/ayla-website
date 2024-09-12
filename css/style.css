@@ -136,9 +136,9 @@ body {
 .gifts {
   background-image: url(../images/gifts/gifts-bg.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: 0 -50px;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 700px;
 }
 
 .gifts span {
@@ -157,8 +157,12 @@ body {
   font-size: 40px;
   font-weight: bold;
 }
+
+.gifts-in-home > div {
+  padding-bottom: 4.5em;
+}
 /* End Gifts */
 
-.right-10 {
-  right: 10%;
+.right-9 {
+  right: 9%;
 }

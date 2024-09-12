@@ -1,6 +1,11 @@
 * {
   font-family: Montserrat;
 }
+
+nav {
+  border-bottom-color: #fff !important;
+}
+
 .rounded-t-90 {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
@@ -64,9 +69,10 @@
   align-items: center;
   flex: 1;
   transform: translateX(-100px);
+  z-index: 100;
 }
 
-.stepper-item::before {
+/* .stepper-item::before {
   position: absolute;
   content: "";
   border-bottom: 2px solid #ccc;
@@ -74,7 +80,7 @@
   top: 20px;
   left: -25%;
   z-index: 2;
-}
+} */
 
 .stepper-item::after {
   position: absolute;
@@ -101,6 +107,25 @@
   z-index: 10;
 }
 
+.first-counter {
+  transform: translateY(-5px) translateX(370%) !important;
+}
+
+.second-counter {
+  transform: translateY(-5px) translateX(250%) !important;
+}
+
+.third-counter {
+  transform: translateY(-5px) translateX(50%) !important;
+}
+
+.fourth-counter {
+  transform: translateY(-5px) translateX(-150%) !important;
+}
+
+.last-counter {
+  transform: translateY(-5px) translateX(-350%) !important;
+}
 .step-counter .line {
   left: 50%;
   transform: translateY(-50%);
@@ -186,9 +211,7 @@
 .stepper-item:first-child {
   transform: translateX(-50px);
 }
-.stepper-item:last-child {
-  transform: translateX(-35%) !important;
-}
+
 .stepper-item:last-child::after {
   content: none;
   position: absolute;

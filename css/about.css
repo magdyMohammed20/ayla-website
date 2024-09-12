@@ -10,6 +10,9 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  border-bottom-color: #fff !important;
+}
 .about-container {
   background-color: #000;
 }
