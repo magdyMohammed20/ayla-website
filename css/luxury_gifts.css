@@ -173,14 +173,14 @@ nav {
 
 .text-element-desc {
   top: 0;
-  width: 302px;
+  width: 330px;
   transform: translateX(-16%);
 }
 
 .text-element-desc-bottom {
   bottom: 0;
-  width: 302px;
-  transform: translateX(-20%);
+  width: 433px;
+  transform: translateX(-13%);
 }
 
 .text-element-desc p:first-child,
@@ -194,7 +194,7 @@ nav {
 
 .text-element-desc p:last-child,
 .text-element-desc-bottom p:last-child {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 .stepper-item:first-child::before {

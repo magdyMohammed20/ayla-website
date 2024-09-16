@@ -60,7 +60,7 @@ nav {
 
 div.card {
   position: relative;
-  background: #fff;
+
   border-radius: 25px;
   height: 500px;
   width: 180px;
@@ -68,6 +68,23 @@ div.card {
 
 div.card img {
   border-radius: 25px;
+  object-fit: cover;
+}
+
+div.card .first-img {
+  object-position: 77%;
+}
+
+div.card .third-img {
+  object-position: 70%;
+}
+
+div.card .fourth-img {
+  object-position: 77%;
+}
+
+div.card .fifth-img {
+  object-position: 70%;
 }
 
 div.card h2 {
@@ -106,6 +123,7 @@ div.card .card-desc {
   width: 90%;
   color: #fff;
   font-weight: 300;
+  font-size: 12px;
 }
 
 div.card .number {

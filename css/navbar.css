@@ -3,13 +3,15 @@
 }
 
 @media (max-width: 1366px) {
+  .text-element-desc {
+    width: 320px;
+  }
   .share-circle {
     display: none;
   }
 
   div.card {
     width: 45%;
-
     transform: translateY(0);
     margin-top: 50px;
   }
@@ -26,6 +28,10 @@
 
   div.card img {
     width: 100%;
+  }
+
+  .text-element-desc-bottom {
+    width: 399px;
   }
 }
 
@@ -298,11 +304,27 @@
   .form-container {
     position: absolute;
   }
+
+  .text-element-desc-bottom {
+    width: 385px;
+  }
+
+  .fourth-counter .text-element-desc-bottom {
+    width: 470px;
+  }
 }
 
 @media (min-width: 1919px) {
   .ceo {
     transform: translateX(2%) translateY(12%) !important;
+  }
+
+  .hero-first-grid {
+    width: 460px;
+  }
+
+  div.card {
+    width: 223px;
   }
 }
 
