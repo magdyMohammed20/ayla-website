@@ -1,7 +1,13 @@
-* {
-  font-family: Montserrat;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+*,
+body,
+html {
+  font-family: "Montserrat";
+}
 nav {
   border-bottom-color: #fff !important;
 }
