@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -175,7 +173,7 @@
 
         <!-- Start About -->
         <div
-          class="mx-auto flex pb-48 items-center about px-8 lg:px-24 items-center flex-wrap pt-5 lg:pt-0">
+          class="mx-auto flex md:pb-48 items-center about md:px-8 lg:px-24 items-center flex-wrap pt-5 lg:pt-0">
           <div
             class="w-full lg:w-2/5 mt-24 flex flex-col justify-center items-center">
             <img
@@ -187,7 +185,7 @@
           </div>
           <div class="flex-1 mt-4 md:mt-12">
             <p
-              class="text-white first-sec-p text-center md:text-left mt-8 md:mt-16">
+              class="text-white first-sec-p first-p text-center md:text-left mt-8 md:mt-16">
               IYLA is a pioneering gift company headquartered in the Kingdom of
               Saudi Arabia, driven by a profound passion for the art of gifting
               and a relentless commitment to transforming untold stories into
@@ -197,6 +195,17 @@
               beautiful stories. At IYLA, we don't just create gifts; we curate
               magical moments that linger in the hearts and memories of both
               givers and receivers.
+            </p>
+
+            <div class="border-t border-white my-35px md:hidden"></div>
+            <p
+              class="text-white md:hidden first-sec-p first-p text-center md:text-left mt-8 md:mt-16">
+              At IYLA, we envision redefining the very essence of gifting,
+              turning it into a captivating journey of creativity and
+              excellence. Our ambition is to lead the industry by providing
+              innovative and distinctive gifts imbued with narratives that
+              convey profound emotions. We aspire to be more than a brand; we
+              aim to inspire a culture of thoughtful gifting.
             </p>
           </div>
         </div>
@@ -208,7 +217,7 @@
 
     <!-- Start Gifts -->
     <div class="relative pb-0 items-center gifts pt-24 px-8 lg:px-0 lg:pt-64">
-      <div class="max-w-79 w-full mx-auto flex">
+      <div class="max-w-79 w-full mx-auto hidden md:flex">
         <div class="w-full lg:w-1/2 text-white gift-p">
           At IYLA, we envision redefining the very essence of gifting, turning
           it into a captivating journey of creativity and excellence. Our
@@ -221,7 +230,7 @@
 
       <!-- Start About Last Section -->
       <div
-        class="px-202px mx-auto flex items-center about mt-12 lg:mt-24 items-center flex-wrap ceo-container">
+        class="px-202px mx-auto flex items-center about mt-12 lg:mt-24 items-center ceo-container flex-row-reverse md:flex-row">
         <div class="w-full lg:w-2/5 mt-24 flex flex-col justify-center">
           <div class="absolute left-0 bottom-0 vector-container hidden lg:flex">
             <img src="./images/about/vector-1.png" />
@@ -230,14 +239,28 @@
             <img src="./images/about/vector-1.png" />
           </div>
 
-          <img src="./images/about/ceo.png" class="ceo" />
+          <img src="./images/about/ceo.png" class="ceo hidden md:flex" />
+          <img src="./images/about/ceo.png" class="ceo md:hidden" />
         </div>
+
+        <img
+          src="./images/about/1.png"
+          class="absolute mob-first-vector md:hidden" />
+        <img
+          src="./images/about/1.png"
+          class="absolute mob-second-vector md:hidden" />
+        <img
+          src="./images/about/2.png"
+          class="absolute mob-third-vector md:hidden" />
+        <img
+          src="./images/about/1.png"
+          class="absolute mob-fourth-vector md:hidden" />
         <div class="flex-1 mt-12 lg:mt-24 ceo-msg">
           <h3
             class="text-2xl text-white transform lg:-translate-x-8 relative ceo-heading">
             CEO’s MESSAGE
           </h3>
-          <p class="text-white first-sec-p mt-8">
+          <p class="text-white first-sec-p mt-8 hidden md:flex">
             IYLA is a pioneering gift company headquartered in the Kingdom of
             Saudi Arabia, driven by a profound passion for the art of gifting
             and a relentless commitment to transforming untold stories into
@@ -247,6 +270,21 @@
             beautiful stories. At IYLA, we don't just create gifts; we curate
             magical moments that linger in the hearts and memories of both
             givers and receivers.
+          </p>
+
+          <p class="text-white first-sec-p last-p mt-8 flex md:hidden">
+            At IYLA, we believe gifts are gateways to cherished memories,
+            emotions and connections. A thoughtful gift transforms a moment into
+            a milestone, conveying love and appreciation. We’re committed to
+            crafting gifts that tell stories, forge bonds and become part of
+            your narrative Osama M. Baselm
+          </p>
+          <p class="text-white first-sec-p last-p flex md:hidden">
+            We’re committed to crafting gifts that tell stories, forge bonds and
+            become part of your narrative
+          </p>
+          <p class="text-white first-sec-p mt-8 flex md:hidden">
+            Osama M. Baselm
           </p>
         </div>
       </div>
@@ -290,7 +328,8 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 md:flex hidden">
+        <ul
+          class="items-center footer-links justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="/" class="">HOME</a>
           </li>

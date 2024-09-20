@@ -20,7 +20,7 @@
     <!-- Start Home Container -->
     <div class="bg-black">
       <!-- Start Wrapper -->
-      <div class="max-w-79 mx-auto">
+      <div class="max-w-79 mx-auto in-person">
         <!-- Start Navbar -->
         <nav
           class="border-b-2 justify-between border-gray-900 flex gap-8 py-4 relative">
@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -175,12 +173,25 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-79 mx-auto flex flex-col gap-0 mt-16 items-center about personalized-cards items-center g-p50">
+          class="max-w-79 mx-auto flex flex-col gap-0 md:mt-16 items-center about personalized-cards items-center g-p50">
           <div
-            class="relative w-full first-collection personalized rounded-t-90">
+            class="relative w-full first-collection personalized rounded-t-90 hidden md:flex">
             <div class="flex flex-col absolute top-50 ml-8 lg:ml-16 font-33">
               <span>PERSONALIZED</span>
               <span>GIFTS</span>
+            </div>
+          </div>
+
+          <div class="md:hidden relative w-full rounded-t-90">
+            <img
+              src="./images/collections/collection-34.jpeg"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+              " />
+            <div
+              class="flex flex-col first-collection-for-mob absolute top-50 font-33">
+              <span class="title-mob">PERSONALIZED GIFTS</span>
             </div>
           </div>
 
@@ -207,10 +218,31 @@
             <div class="third-circle share-circle absolute"></div>
             <div class="fourth-circle share-circle absolute"></div>
             <div class="fifth-circle share-circle absolute"></div>
-            <div class="card first-card">
+            <div class="card first-card relative">
+              <div class="absolute first-connector md:hidden">
+                <svg class="connector" width="200" height="300">
+                  <!-- Path with a right-angle turn and rounded top corner, dotted line in white, with horizontal line to the left -->
+                  <path
+                    d="M 100 50 
+                           V 275
+                           A 25 25 0 0 1 75 300
+                           H 50"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-dasharray="4 4"></path>
+                </svg>
+              </div>
+
               <div class="number">01</div>
               <h2>Client meeting</h2>
-              <img src="./images/personalized/1.png" class="h-full first-img" />
+              <img
+                src="./images/personalized/1.png"
+                class="h-full first-img hidden md:block" />
+
+              <img
+                src="./images/personalized/mob/01.png"
+                class="h-full mob md:hidden" />
 
               <div class="card-desc">
                 We sit down with the client, ears tuned to their needs, soaking
@@ -218,13 +250,29 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card second-card">
+              <div class="absolute second-connector md:hidden">
+                <svg class="connector" width="200" height="300">
+                  <!-- Path with a right-angle turn and rounded top corner, dotted line in white, with horizontal line to the left -->
+                  <path
+                    d="M 100 50 
+                           V 275
+                           A 25 25 0 0 1 75 300
+                           H 50"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-dasharray="4 4"></path>
+                </svg>
+              </div>
               <div class="number">02</div>
-              <h2>Brainstorming</h2>
+              <h2 class="text-right md:text-left">Brainstorming</h2>
               <img
                 src="./images/personalized/2.png"
-                class="h-full second-img" />
-
+                class="h-full second-img hidden md:block" />
+              <img
+                src="./images/personalized/mob/02.png"
+                class="h-full mob md:hidden" />
               <div class="card-desc">
                 Our team embarks on a journey through data and insights, weaving
                 a narrative that unlocks the essence of the client's
@@ -232,11 +280,29 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card third-card">
+              <div class="absolute third-connector md:hidden">
+                <svg class="connector" width="200" height="300">
+                  <!-- Path with a right-angle turn and rounded top corner, dotted line in white, with horizontal line to the left -->
+                  <path
+                    d="M 100 50 
+                           V 275
+                           A 25 25 0 0 1 75 300
+                           H 50"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-dasharray="4 4"></path>
+                </svg>
+              </div>
               <div class="number">03</div>
               <h2>Design</h2>
-              <img src="./images/personalized/3.jpg" class="h-full third-img" />
-
+              <img
+                src="./images/personalized/3.jpg"
+                class="h-full third-img hidden md:block" />
+              <img
+                src="./images/personalized/mob/03.png"
+                class="h-full mob md:hidden" />
               <div class="card-desc">
                 Architects and designers collaborate, sketching visions that
                 bring possibility to life, each stroke a step toward fulfilling
@@ -244,34 +310,74 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card fourth-card">
+              <div class="absolute fourth-connector md:hidden">
+                <svg class="connector" width="200" height="300">
+                  <!-- Path with a right-angle turn and rounded top corner, dotted line in white, with horizontal line to the left -->
+                  <path
+                    d="M 100 50 
+                           V 275
+                           A 25 25 0 0 1 75 300
+                           H 50"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-dasharray="4 4"></path>
+                </svg>
+              </div>
               <div class="number">04</div>
-              <h2>3D modelling</h2>
+              <h2 class="text-right md:text-left">3D modelling</h2>
               <img
                 src="./images/personalized/4.jpg"
-                class="h-full fourth-img" />
-
+                class="h-full fourth-img hidden md:block" />
+              <img
+                src="./images/personalized/mob/04.png"
+                class="h-full mob md:hidden" />
               <div class="card-desc">
                 With the nod of approval, we breathe life into the sketches,
                 sculpting digital masterpieces that give form to imagination.
               </div>
             </div>
-            <div class="card">
+            <div class="card fifth-card">
+              <div class="absolute fifth-connector md:hidden">
+                <svg class="connector" width="200" height="300">
+                  <!-- Path with a right-angle turn and rounded top corner, dotted line in white, with horizontal line to the left -->
+                  <path
+                    d="M 100 50 
+                           V 275
+                           A 25 25 0 0 1 75 300
+                           H 50"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-dasharray="4 4"></path>
+                </svg>
+              </div>
               <div class="number">05</div>
               <h2>Manufacturing</h2>
-              <img src="./images/personalized/5.png" class="h-full fifth-img" />
+              <img
+                src="./images/personalized/5.png"
+                class="h-full fifth-img hidden md:block" />
 
+              <img
+                src="./images/personalized/mob/05.png"
+                class="h-full mob md:hidden" />
               <div class="card-desc">
                 Guided by precision and passion, our designs journey to the
                 factory floor, where skilled hands mold them into tangible
                 reality.
               </div>
             </div>
-            <div class="card">
+            <div class="card six-card">
               <div class="number">06</div>
-              <h2>Final Product</h2>
-              <img src="./images/personalized/6.jpg" class="h-full sixth-img" />
+              <h2 class="text-right md:text-left">Final Product</h2>
+              <img
+                src="./images/personalized/6.jpg"
+                class="h-full sixth-img hidden md:block" />
 
+              <img
+                src="./images/personalized/mob/06.png"
+                class="h-full mob md:hidden" />
               <div class="card-desc">
                 Like a crescendo, the culmination of our efforts emerges—a
                 polished, perfected product ready to grace its intended space.
@@ -322,7 +428,8 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 md:flex hidden">
+        <ul
+          class="items-center footer-links justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="/" class="">HOME</a>
           </li>

@@ -20,7 +20,7 @@
     <!-- Start Home Container -->
     <div class="bg-black md:pb-24">
       <!-- Start Wrapper -->
-      <div class="max-w-79 mx-auto">
+      <div class="max-w-79 mx-auto in-expressive">
         <!-- Start Navbar -->
         <nav
           class="border-b-2 justify-between border-gray-900 flex gap-8 py-4 relative">
@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -175,11 +173,20 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-79 mx-auto flex flex-col gap-0 mt-8 lg:mt-16 items-center about items-center g-p">
-          <div class="relative w-full first-collection rounded-t-90">
+          class="mx-auto about-exp flex flex-col gap-0 mt-8 lg:mt-16 max-w-79 items-center about items-center g-p">
+          <div
+            class="hidden md:flex relative w-full first-collection rounded-t-90">
             <div class="flex flex-col absolute top-50 ml-16 font-33">
               <span>EXPRESSIVE</span>
               <span>GIFTS</span>
+            </div>
+          </div>
+
+          <div class="md:hidden relative w-full rounded-t-90">
+            <img src="./images/collections/exp-mob.png" />
+            <div
+              class="flex flex-col first-collection-for-mob absolute top-50 font-33">
+              <span class="title-mob">EXPRESSIVE GIFTS</span>
             </div>
           </div>
 
@@ -194,7 +201,7 @@
             </p>
           </div>
 
-          <ul class="flex gap-4 mt-8 lg:gap-16 links flex-wrap g-p">
+          <ul class="flex gap-4 md:mt-8 lg:gap-16 links flex-wrap g-p">
             <li>
               <a href="#" class="text-white">CORPORATE GIFTS</a>
             </li>
@@ -592,7 +599,8 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 md:flex hidden">
+        <ul
+          class="items-center footer-links justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="/" class="">HOME</a>
           </li>

@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
 }
 
+.max-w-79 {
+  padding-top: 0 !important;
+}
 nav {
   border-bottom-color: #fff !important;
 }
@@ -28,10 +31,12 @@ nav {
 }
 
 .first-sec-p {
-  font-family: Montserrat;
-  font-size: 15px;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 500;
-  line-height: 23px;
+  line-height: normal;
 }
 
 .gifts {
@@ -41,8 +46,12 @@ nav {
 }
 
 .gift-p {
-  line-height: 24px;
-  font-size: 18px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .ceo {
@@ -79,6 +88,11 @@ nav {
 
 .ceo-heading {
   display: inline-block;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .ceo-heading::after {
   content: "";

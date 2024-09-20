@@ -18,9 +18,9 @@
   </head>
   <body>
     <!-- Start Home Container -->
-    <div class="bg-black pb-48">
+    <div class="bg-black md:pb-48">
       <!-- Start Wrapper -->
-      <div class="max-w-79 mx-auto">
+      <div class="max-w-79 mx-auto lux-container">
         <!-- Start Navbar -->
         <nav
           class="border-b-2 justify-between border-gray-900 flex gap-8 py-4 relative">
@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -175,16 +173,25 @@
 
         <!-- Start Colections -->
         <div
-          class="max-w-79 mx-auto flex flex-col gap-0 mt-16 items-center about luxury items-center">
-          <div class="relative w-full first-collection rounded-t-90">
+          class="max-w-79 mx-auto flex flex-col gap-0 pt-32px md:mt-16 items-center about luxury items-center">
+          <div
+            class="hidden md:flex relative w-full first-collection rounded-t-90">
             <div class="flex flex-col absolute top-50 ml-16 font-33">
               <span>LUXURY</span>
               <span>GIFTS</span>
             </div>
           </div>
 
+          <div class="md:hidden relative w-full rounded-t-90">
+            <img src="./images/luxury/top.png" />
+            <div
+              class="flex flex-col first-collection-for-mob absolute top-50 font-33">
+              <span class="title-mob">LUXURY GIFTS</span>
+            </div>
+          </div>
+
           <div>
-            <p class="text-white text-center paragraph border-b pb-8">
+            <p class="text-white text-center paragraph border-b pb-8 p-in-lux">
               Indulge in luxury like never before with our Unique Gifts
               collection – a haven of opulence curated exclusively for our VIP
               clientele. From the moment you lay eyes on our meticulously
@@ -204,103 +211,148 @@
       </div>
 
       <!-- Start infograph Section -->
-      <div class="px-4 md:px-24 my-16 vertical-stepper">
-        <ol class="space-y-8 lg:hidden">
-          <li
-            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-indigo-600 after:inline-block after:absolute after:-bottom-11 after:left-4 lg:after:left-5">
-            <a class="flex items-center font-medium w-full">
-              <span
-                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
-                >1</span
-              >
-              <div class="block">
-                <h4 class="text-lg text-gray-700 font-bold">Design Ideas</h4>
-                <span class="text-sm text-white text-sm"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero eveniet impedit cum quos dolor esse, ullam harum?
-                  Suscipit, sequi error!</span
-                >
+      <div
+        class="px-4 md:px-24 mt-8 md:my-16 vertical-stepper relative md:hidden">
+        <div class="step-back w-full">
+          <div>
+            <div class="data-mob">
+              <div class="relative">
+                <div class="absolute line line-mob">
+                  <div class="absolute line-title flex gap-8">
+                    <p>01</p>
+                    Brainstorming
+                  </div>
+                </div>
               </div>
-            </a>
-          </li>
-          <li
-            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
-            <a class="flex items-center font-medium w-full">
-              <span
-                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
-                >2</span
-              >
-              <div class="block">
-                <h4 class="text-lg text-gray-700 font-bold">Design Ideas</h4>
-                <span class="text-sm text-white"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero eveniet impedit cum quos dolor esse, ullam harum?
-                  Suscipit, sequi error!</span
-                >
-              </div>
-            </a>
-          </li>
-          <li
-            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
-            <a class="flex items-center font-medium w-full">
-              <span
-                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
-                >3</span
-              >
-              <div class="block">
-                <h4 class="text-lg text-gray-700 font-bold">
-                  Design Confirmation
-                </h4>
-                <span class="text-sm text-white"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero eveniet impedit cum quos dolor esse, ullam harum?
-                  Suscipit, sequi error!</span
-                >
-              </div>
-            </a>
-          </li>
 
-          <li
-            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
-            <a class="flex items-center font-medium w-full">
-              <span
-                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
-                >4</span
-              >
-              <div class="block">
-                <h4 class="text-lg text-gray-700 font-bold">
-                  Manufacturing & Supply
-                </h4>
-                <span class="text-sm text-white"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero eveniet impedit cum quos dolor esse, ullam harum?
-                  Suscipit, sequi error!</span
-                >
+              <div class="icon-con absolute">
+                <img src="./images/luxury/icons/01.png" />
               </div>
-            </a>
-          </li>
+            </div>
 
-          <li
-            class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
-            <a class="flex items-center font-medium w-full">
-              <span
-                class="w-12 h-8 border-2 border-gray-700 rounded-full flex justify-center items-center mr-3 text-sm text-gray-600 font-bold lg:w-10 lg:h-10"
-                >5</span
-              >
-              <div class="block">
-                <h4 class="text-lg text-gray-700 font-bold">Encapsulation</h4>
-                <span class="text-sm text-white"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero eveniet impedit cum quos dolor esse, ullam harum?
-                  Suscipit, sequi error!</span
-                >
+            <div class="flex flex-row absolute">
+              <div class="text-white flex gap-12 left-0 mt-16 text-mob">
+                <p>
+                  Initially, our team brainstorms ideas by discussing and
+                  refining concepts, drawing inspiration from diverse cultures
+                  or regions for design influence.
+                </p>
               </div>
-            </a>
-          </li>
-        </ol>
+            </div>
+          </div>
+          <div>
+            <div class="data-mob">
+              <div class="relative">
+                <div class="absolute line line-mob">
+                  <div class="absolute line-title second-line-title flex gap-8">
+                    Design Ideas
+                    <p>02</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-con second-icon-con absolute">
+                <img src="./images/luxury/icons/02.png" />
+              </div>
+            </div>
+
+            <div class="flex flex-row absolute">
+              <div
+                class="text-white flex gap-12 left-0 mt-16 text-mob second-text-mob">
+                <p>
+                  We then take it back to our office, and that’s where the real
+                  magic happens. Our inhouse team of architects and designers
+                  dive into translating client ideas into tangible design
+                  concepts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="data-mob">
+              <div class="relative">
+                <div class="absolute line line-mob">
+                  <div class="absolute line-title third-line-title flex gap-8">
+                    <p>03</p>
+                    Design Confirmation
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-con absolute">
+                <img src="./images/luxury/icons/03.png" />
+              </div>
+            </div>
+
+            <div class="flex flex-row absolute">
+              <div class="text-white flex gap-12 left-0 mt-16 text-mob">
+                <p>
+                  Once the initial design is drafted, we present it to the
+                  client for their feedback and approval before proceeding to
+                  the manufacturing stage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="data-mob">
+              <div class="relative">
+                <div class="absolute line line-mob line-mob-five">
+                  <div class="line-title fourth-line-title flex gap-8">
+                    Manufacturing & Supply
+                    <p>04</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-con second-icon-con absolute">
+                <img src="./images/luxury/icons/04.png" />
+              </div>
+            </div>
+
+            <div class="flex flex-row absolute">
+              <div
+                class="text-white flex gap-12 left-0 mt-16 text-mob second-text-mob">
+                <p>
+                  We adhere to stringent quality standards, collaborating with
+                  select factories to ensure precision and craftsmanship. From
+                  material selection to production, every stage is meticulously
+                  monitored to deliver products that surpass expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="data-mob">
+              <div class="relative">
+                <div class="absolute line line-mob">
+                  <div class="absolute line-title last-line-title flex gap-8">
+                    <p>05</p>
+                    Encapsulation
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-con absolute">
+                <img src="./images/luxury/icons/05.png" />
+              </div>
+            </div>
+
+            <div class="flex flex-row absolute">
+              <div class="text-white flex gap-12 left-0 mt-16 text-mob">
+                <p>
+                  We believe that the presentation is as important as the gift
+                  itself. Our luxurious packaging enhances the aesthetic appeal
+                  of each gift, making the unwrapping experience as delightful
+                  as the gift itself.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="lg:flex mt-64 py-32 gap-8 relative w-full hidden">
+      <div class="md:flex mt-64 py-32 gap-8 relative w-full hidden">
         <div class="stepper-wrapper w-full">
           <div class="stepper-item completed">
             <div class="step-counter first-counter">
@@ -317,7 +369,7 @@
                   </p>
                 </div>
               </div>
-              <i class="fa-solid fa-brain"></i>
+              <img src="./images/luxury/icons/01.png" />
             </div>
           </div>
           <div class="stepper-item completed">
@@ -337,7 +389,7 @@
                 </div>
               </div>
 
-              <i class="fa-regular fa-lightbulb"></i>
+              <img src="./images/luxury/icons/02.png" />
             </div>
           </div>
           <div class="stepper-item active">
@@ -356,7 +408,7 @@
                 </div>
               </div>
 
-              <i class="fa-regular fa-thumbs-up"></i>
+              <img src="./images/luxury/icons/03.png" />
             </div>
           </div>
           <div class="stepper-item">
@@ -379,7 +431,7 @@
                 </div>
               </div>
 
-              <i class="fa-solid fa-ruler"></i>
+              <img src="./images/luxury/icons/04.png" />
             </div>
           </div>
 
@@ -400,7 +452,7 @@
                 </div>
               </div>
 
-              <i class="fa-solid fa-cube"></i>
+              <img src="./images/luxury/icons/05.png" />
             </div>
           </div>
         </div>
@@ -446,7 +498,8 @@
           </defs>
         </svg>
 
-        <ul class="items-center justify-center gap-16 md:flex hidden">
+        <ul
+          class="items-center footer-links justify-center gap-16 md:flex hidden">
           <li class="pt-1.5 font-medium">
             <a href="/" class="">HOME</a>
           </li>

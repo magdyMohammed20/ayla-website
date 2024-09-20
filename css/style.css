@@ -61,7 +61,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 22px;
   font-style: italic;
   font-weight: 600;
@@ -127,11 +127,13 @@ body {
   font-size: 14px;
 }
 
-.about-content {
+.about-content,
+.about-content span {
+  font-family: "Montserrat-Bold";
   font-size: 64px;
-  font-weight: 700;
   font-style: italic;
-  line-height: 67px;
+  font-weight: 700;
+  line-height: 67px; /* 104.688% */
 }
 
 .about-img {
@@ -167,6 +169,25 @@ body {
 
 .gifts-in-home > div {
   padding-bottom: 4.5em;
+}
+
+.gifts-in-home span:nth-child(1),
+.gifts-in-home span:nth-child(2) {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 69px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 83px; /* 120.29% */
+}
+
+.gifts-in-home span:nth-child(3),
+.gifts-in-home span:nth-child(4) {
+  font-family: "Montserrat-Bold";
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 83px;
 }
 /* End Gifts */
 

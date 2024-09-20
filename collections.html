@@ -20,7 +20,7 @@
     <!-- Start Home Container -->
     <div class="bg-black h-screen">
       <!-- Start Wrapper -->
-      <div class="max-w-79 mx-auto">
+      <div class="max-w-79 mx-auto in-collections">
         <!-- Start Navbar -->
         <nav
           class="border-b-2 justify-between border-gray-900 flex gap-8 py-4 relative">
@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -178,39 +176,49 @@
           class="max-w-79 mx-auto flex flex-col gap-0 pt-68px items-center about px-12 md:px-0 items-center all-collections">
           <a href="luxury_gifts.html" class="block w-full">
             <div
+              style="border-radius: 0"
               class="h-33 w-full relative first-collection rounded-t-90 -translate-y-10">
-              <div class="flex flex-col absolute top-40 ml-16 font-70">
-                <span>LUXURY</span>
-                <span>GIFTS</span>
+              <div
+                class="flex flex-col absolute top-40 ml-16 font-70 positioned-title">
+                <span class="hidden md:flex">LUXURY</span>
+                <span class="hidden md:flex">GIFTS</span>
+
+                <span class="md:hidden">LUXURY GIFTS</span>
               </div>
               <img
                 src="./images/collections/collection-1.jpeg"
-                class="w-full rounded-t-90 h-full image first-img" />
+                class="w-full rounded-t-90 h-full image first-img hidden md:flex" />
             </div>
           </a>
 
           <a href="expressive_gifts.html" class="block w-full">
-            <div class="h-33 relative w-full -translate-y-30">
-              <div class="flex flex-col absolute top-40 ml-16 font-70">
-                <span>EXPRESSIVE</span>
-                <span>GIFTS</span>
+            <div class="h-33 relative w-full second-collection -translate-y-30">
+              <div
+                class="flex flex-col absolute top-40 ml-16 font-70 positioned-title">
+                <span class="hidden md:flex">EXPRESSIVE</span>
+                <span class="hidden md:flex">GIFTS</span>
+
+                <span class="md:hidden">EXPRESSIVE GIFTS</span>
               </div>
               <img
                 src="./images/collections/collection-2.jpeg"
-                class="w-full rounded-t-90 h-full second-img image" />
+                class="w-full rounded-t-90 h-full second-img image hidden md:flex" />
             </div>
           </a>
 
           <a href="personalized_gifts.html" class="block w-full">
-            <div class="h-33 relative w-full -translate-y-60">
-              <div class="flex flex-col absolute top-40 ml-16 font-70">
-                <span>PERSONALIZED</span>
-                <span>GIFTS</span>
+            <div class="h-33 relative w-full -translate-y-60 third-collection">
+              <div
+                class="flex flex-col absolute top-40 ml-16 font-70 positioned-title">
+                <span class="hidden md:flex">PERSONALIZED</span>
+                <span class="hidden md:flex">GIFTS</span>
+
+                <span class="md:hidden">PERSONALIZED GIFTS</span>
               </div>
 
               <img
                 src="./images/collections/collection-3.jpeg"
-                class="w-full rounded-t-90 h-full image" />
+                class="w-full rounded-t-90 h-full image hidden md:flex" />
             </div>
           </a>
         </div>

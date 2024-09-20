@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
 * {
-  font-family: Montserrat;
+  font-family: "Montserrat";
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
@@ -37,7 +46,7 @@ nav {
 .font-33 {
   font-size: 33px;
   font-weight: 600;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   color: #fff;
   line-height: 101%;
 }
@@ -47,7 +56,7 @@ nav {
   font-size: 21px;
   margin-top: 18px;
   line-height: 30px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
 }
 
 .title {
@@ -55,7 +64,7 @@ nav {
   font-size: 24px;
   margin-top: 18px;
   line-height: 30px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
 }
 
 div.card {
@@ -66,7 +75,7 @@ div.card {
   width: 180px;
 }
 
-div.card img {
+div.card img:not(.mob) {
   border-radius: 25px;
   object-fit: cover;
 }
@@ -97,7 +106,7 @@ div.card h2 {
   left: -12px;
   right: 0;
   font-size: 18px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 600;
 }
 
@@ -211,4 +220,125 @@ div.card .number::before {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   width: 18%;
+}
+
+@media (max-width: 576px) {
+  .personalized-cards {
+    padding: 0 !important;
+  }
+
+  .paragraph + p {
+    padding-top: 0 !important;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 200% */
+  }
+
+  .first-connector {
+    top: 37%;
+    left: 74%;
+    z-index: -1;
+  }
+
+  .first-connector {
+    transform: rotateX(180deg);
+  }
+
+  .second-connector {
+    top: 40%;
+    transform: rotateX(180deg) rotateY(180deg);
+    right: 47%;
+    z-index: -1;
+    right: 71%;
+  }
+
+  .third-connector {
+    left: 75%;
+    transform: rotateX(180deg);
+    top: 35%;
+    z-index: -1;
+  }
+
+  .fourth-connector {
+    top: 40%;
+    transform: rotateX(180deg) rotateY(180deg);
+    left: -61%;
+    z-index: -1;
+  }
+
+  .fifth-connector {
+    top: 40%;
+    transform: rotateX(180deg);
+    right: -65%;
+    z-index: -1;
+  }
+
+  div.card img.mob {
+    height: auto;
+    border-radius: 15px;
+  }
+
+  div.card .card-desc {
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    padding: 0 0 !important;
+    margin-top: 4em;
+    font-size: 11px !important;
+    position: relative;
+    text-align: justify;
+  }
+
+  .cards-container {
+    margin-bottom: 0;
+  }
+
+  div.card {
+    height: auto !important;
+  }
+
+  div.card h2 {
+    padding-left: 20px !important;
+  }
+  div.card h2.text-right {
+    left: 0px;
+    right: -20px;
+    width: 108%;
+    position: relative;
+    padding-right: 20px;
+  }
+
+  div.card h2.text-right::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 93%;
+    transform: rotate(102deg);
+    border: 15px solid #142f2a;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    z-index: -1;
+  }
+
+  .six-card .number,
+  .fourth-card .number,
+  .second-card .number {
+    width: 60px;
+    height: 60px;
+    top: 0 !important;
+  }
+
+  .six-card h2,
+  .fourth-card h2,
+  .second-card h2 {
+    transform: translateY(20px);
+  }
+
+  .personalized-cards {
+    margin-top: 26px !important;
+  }
 }

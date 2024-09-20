@@ -9,6 +9,9 @@ html {
   font-family: "Montserrat";
 }
 
+.max-w-79 {
+  padding-bottom: 0 !important;
+}
 nav {
   border-bottom-color: #fff !important;
 }
@@ -70,11 +73,11 @@ nav {
 .links li::after {
   content: "";
   position: absolute;
-  left: -15px;
-  top: 50%;
+  left: -9px;
+  top: 60%;
   transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   background-color: #fff;
   border-radius: 100%;
 }

@@ -16,11 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body class="h-screen md:h-auto">
     <!-- Start Contact Container -->
     <div class="bg-black-linear h-full pb-12 lg:pb-24">
       <!-- Start Wrapper -->
-      <div class="max-w-79 mx-auto">
+      <div class="max-w-79 mx-auto in-contact">
         <!-- Start Navbar -->
         <nav
           class="border-b-2 justify-between border-gray-900 flex gap-8 py-4 relative">
@@ -154,19 +154,17 @@
           <div class="relative flex items-center justify-center md:hidden">
             <button type="button" class="nav-btn">
               <svg
-                fill="#FFF"
-                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="h-6 w-auto text-slate-900">
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  stroke="#FFF"
+                  d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+                  stroke="white"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  stroke-linejoin="round" />
               </svg>
             </button>
           </div>
@@ -174,6 +172,38 @@
         <!-- End Navbar -->
       </div>
 
+      <!-- Start Address For Mobile -->
+      <div class="mt-8 relative address address-mobile md:hidden">
+        <img
+          src="./images/contact/location.png"
+          class="absolute img-bg md:hidden location-mob"
+          style="display: block" />
+        <p>
+          4082 Prince Muhammad Ibn<br />
+          Abd Al Aziz, 6583, Al Olaya, 3rd Floor<br />
+          Riyadh, Saudi Arabia 12331 <br />
+        </p>
+
+        <p class="my-4 md:my-8">
+          +966 53 043 1510
+          <br />
+          +966 53 339 1576
+        </p>
+
+        <ul
+          class="items-center gap-4 flex justify-end px-0 lg:justify-start mb-2">
+          <li>
+            <a href="#"> <i class="fa-solid fa-envelope fa-sm"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-instagram fa-sm"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-x-twitter fa-sm"></i> </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Address For Mobile -->
       <!-- Start Parent -->
       <div class="flex flex-col gap-0 items-center items-center">
         <!-- Start Contact Section -->
@@ -186,10 +216,11 @@
 
           <div class="form-container relative">
             <div>
-              <h1 class="text-white text-2xl lg:text-5xl font-bold">
+              <h1 class="text-white text-2xl form-title lg:text-5xl font-bold">
                 Get In Touch
               </h1>
-              <p class="paragraph text-white text-sm lg:text-xl">
+              <p
+                class="paragraph text-in-contact text-white text-sm lg:text-xl">
                 Write to us and we will contact you as soon as we can
               </p>
             </div>
@@ -206,7 +237,7 @@
                   name="email"
                   type="text"
                   class="feedback-input"
-                  placeholder="Email" />
+                  placeholder="EMAIL" />
               </div>
 
               <div class="border-b input-container">
@@ -232,7 +263,7 @@
         <!-- End Contact Section -->
       </div>
 
-      <div class="mt-8 max-w-79 mx-auto relative address">
+      <div class="mt-8 max-w-79 mx-auto relative address hidden md:block">
         <p>
           4082 Prince Muhammad Ibn<br />
           Abd Al Aziz, 6583, Al Olaya, 3rd Floor<br />
