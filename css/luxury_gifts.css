@@ -354,14 +354,8 @@ nav {
     width: auto !important;
   }
 
-  .icon-con {
-    left: -94% !important;
-    top: 45px;
-    position: absolute;
-  }
-
   .second-icon-con {
-    left: 305% !important;
+    left: 315% !important;
   }
 
   .text-mob {
@@ -409,5 +403,62 @@ nav {
 
   .first-collection-for-mob {
     top: 35% !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .second-icon-con {
+    left: 314% !important;
+    top: 50px;
+  }
+
+  .first-icon-con,
+  .third-icon-con,
+  .fourth-icon-con {
+    right: 90%;
+    top: 45px;
+  }
+
+  .first-line {
+    left: 10px;
+  }
+}
+@media (min-width: 400px) {
+  .icon-con {
+    left: -104% !important;
+    top: 40px;
+    position: absolute;
+  }
+  .second-icon-con {
+    left: 388% !important;
+  }
+
+  .line-mob-five {
+    left: 145px;
+  }
+
+  .second-line-title {
+    right: -390px !important;
+  }
+
+  .third-line-title {
+    left: 35px;
+  }
+
+  .last-line-title {
+    left: -4px !important;
+    top: -9px !important;
+  }
+
+  .fourth-line-title {
+    left: -11px;
+  }
+
+  .second-line-title {
+    right: -385px !important;
+  }
+
+  .first-line {
+    left: 0 !important;
   }
 }

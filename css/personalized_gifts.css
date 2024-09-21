@@ -342,3 +342,45 @@ div.card .number::before {
     margin-top: 26px !important;
   }
 }
+
+@media (max-width: 360px) {
+  .first-connector {
+    top: 37%;
+    left: 75%;
+    z-index: -1;
+  }
+
+  .second-connector {
+    right: 75%;
+  }
+
+  .fourth-connector {
+    left: -60%;
+  }
+
+  .fifth-connector {
+    right: -60%;
+  }
+}
+
+@media (min-width: 400px) {
+  .first-connector {
+    left: 80%;
+  }
+
+  .second-connector {
+    right: 83% !important;
+  }
+
+  .third-connector {
+    left: 81%;
+  }
+
+  .fourth-connector {
+    left: -55%;
+  }
+
+  .fifth-connector {
+    right: -52%;
+  }
+}

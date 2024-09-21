@@ -833,6 +833,10 @@ nav a {
   .luxury {
     margin-top: 32px !important;
   }
+
+  .luxury img {
+    min-width: 100%;
+  }
   .positioned-title span {
     white-space: nowrap;
   }
